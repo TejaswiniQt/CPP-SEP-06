@@ -1,0 +1,19 @@
+// Add two numbers and return through the third pointer argument
+
+#include <iostream>
+
+using namespace std;
+
+void addval(int *a,int *b,int *result)
+{
+     *result = *a + *b;
+}
+
+int main()
+{
+    int a = 10, b = 15;
+    int result;
+    addval(&a,&b,&result);
+    cout<<"sum = "<<result<<endl;
+    return 0;
+}

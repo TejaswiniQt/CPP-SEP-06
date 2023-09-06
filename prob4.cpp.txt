@@ -1,0 +1,22 @@
+//Generate the factorial of a number and return that through the second pointer argument
+
+#include <iostream>
+
+using namespace std;
+
+void factorial(int *a,int *result)
+{
+   while(*a != 0)
+   {
+       *result = *result * *a;
+       *a = *a - 1;
+   }
+}
+
+int main()
+{
+    int a = 5,result = 1;
+    factorial(&a,&result);
+    cout<<"Result = "<<result<<endl;
+    return 0;
+}
